@@ -28,17 +28,31 @@ It is designed to be modular, efficient, and interactive via CLI (Command Line I
 
 ## 📁 Project Structure
 ```
-levenshtein_project/
-├── main.cpp # Main entry point with task menu
-├── test_cases.cpp # Functions for each task (runTask1–4)
-├── test_cases.h # Declarations for test case functions
-├── edit_distance.cpp # Levenshtein distance logic
-├── edit_distance.h # Headers for distance functions
-├── spell_checker.cpp # Spell checker using Levenshtein
-├── spell_checker.h # Headers for spell checker
-├── optimized.cpp # Optimized space-saving Levenshtein
-├── optimized.h # Header for optimized logic
-└── README.md # You're reading it
+HARSH_SINGH/
+├── edit_distance.cpp         # Standard and weighted edit distance logic
+├── edit_distance.h           # Header for edit distance functions
+
+├── optimized.cpp             # Optimized space-efficient Levenshtein implementation
+├── optimized.h               # Header for optimized logic
+
+├── spell_checker.cpp         # Spell checker using Levenshtein distance
+├── spell_checker.h           # Header for spell checker
+
+├── test_cases.cpp            # Functions for running all 4 tasks
+├── test_cases.h              # Header declarations for runTask functions
+
+├── main.cpp                  # Main entry point, calls runTask1–4
+├── Makefile                  # Optional: to automate compilation (Linux/macOS)
+
+├── Readme.md                 # Project overview, setup, sample I/O
+├── optimization_notes.md     # Detailed explanation of Task 4 optimization
+
+├── Output/                   # Screenshots of task outputs
+│   ├── Output_1.png          # Task 1 - Standard Levenshtein
+│   ├── Output_2.png          # Task 2 - Weighted Edit Distance
+│   ├── Output_3.png          # Task 3 - Spell Checker
+│   ├── Output_4.png          # Task 4 - Optimized Version
+
 ```
 ---
 
@@ -57,28 +71,15 @@ levenshtein.exe
 # Sample Input & Output
 
 ## Task 1
-```
-Enter string 1: kitten
-Enter string 2: sitting
-Edit Distance: 3
-```
+![Output_1](https://github.com/user-attachments/assets/b3dba2c3-9994-47d3-9405-fa96898f4eb2)
+
+
 ## Task 2
-```
-Enter string 1: flaw
-Enter string 2: lawn
-Ci: 2, Cd: 2, Cs: 1
-Output: 4
-```
+ ![Output_2](https://github.com/user-attachments/assets/3eb709f2-ab2e-48fa-af7a-c55b654fd3fc)
+
 ## Task 3
-```
-Enter word: dat
-Dictionary size: 8
-Words: cred bet shat that brad cart brat card
-Output: bet shat that cart brat
-```
+ ![Output_3](https://github.com/user-attachments/assets/8d65bd7e-2d87-4165-bd39-6ae05a177a5f)
+
 ## Task 4
-```
-Enter string 1: algorithm
-Enter string 2: logarithm
-Optimized Edit Distance: 3
-```
+![Output_4](https://github.com/user-attachments/assets/04e5abb7-07f0-498f-83c0-4bea3bc44b8b)
+
