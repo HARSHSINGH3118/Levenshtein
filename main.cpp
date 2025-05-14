@@ -1,5 +1,5 @@
 #include <iostream>
-#include "test_cases.cpp"
+#include "test_cases.h"
 
 int main()
 {
